@@ -1,10 +1,12 @@
 package com.ks.hihi.haha.items;
 
+import java.io.Serializable;
+
 /**
  * Created by jo on 2017-05-05.
  */
 
-public class BaseObj {
+public class BaseObj implements Serializable {
     private String _id;
     private String title;
     private String img_org;

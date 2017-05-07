@@ -243,11 +243,8 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback,
                     @Override
                     public void onClick(BottomDialog dialog) {
                         Intent it = new Intent(context, DetailActivity.class);
-                        Bundle bundle = new Bundle();
-                        bundle.putString("id", item.get_id());
-
-                        it.putExtra("item", bundle);
-
+                        it.putExtra("ITEM", item);
+                        startActivity(it);
                     }
                 }).build();
 
