@@ -9,6 +9,7 @@ import com.android.volley.RequestQueue;
 import com.android.volley.toolbox.ImageLoader;
 import com.android.volley.toolbox.Volley;
 import com.ks.hihi.haha.utill.LruBitmapCache;
+import com.tsengvn.typekit.Typekit;
 
 /**
  * Created by jo on 2017-05-07.
@@ -24,6 +25,11 @@ public class GlobalApplication extends Application {
     public void onCreate() {
         super.onCreate();
         instance = this;
+
+        Typekit.getInstance()
+                .addNormal(Typekit.createFromAsset(this, "NanumSquareR.ttf"))
+                .addBold(Typekit.createFromAsset(this, "NanumSquareB.ttf"))
+                .add("test", Typekit.createFromAsset(this, "NanumBrush.ttf"));
 
 
         final RequestQueue requestQueue = Volley.newRequestQueue(this);

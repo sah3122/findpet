@@ -1,5 +1,6 @@
 package com.ks.hihi.haha.main;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -8,6 +9,7 @@ import android.widget.LinearLayout;
 
 import com.ks.hihi.haha.R;
 import com.ks.hihi.haha.map.MapActivity;
+import com.tsengvn.typekit.TypekitContextWrapper;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
@@ -41,5 +43,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         } else if(v.getId() == llFindInList.getId()){
 
         }
+    }
+
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(TypekitContextWrapper.wrap(newBase));
     }
 }
