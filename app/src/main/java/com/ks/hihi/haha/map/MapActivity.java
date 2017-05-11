@@ -31,7 +31,6 @@ import com.ks.hihi.haha.R;
 import com.ks.hihi.haha.detail.DetailActivity;
 import com.ks.hihi.haha.items.BaseObj;
 import com.ks.hihi.haha.items.Item;
-import com.ks.hihi.haha.items.Loss;
 import com.ks.hihi.haha.request.RequestList;
 import com.ks.hihi.haha.request.RequestOne;
 

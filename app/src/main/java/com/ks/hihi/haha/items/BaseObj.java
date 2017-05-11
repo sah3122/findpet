@@ -17,6 +17,7 @@ public class BaseObj implements Serializable {
     private String sex;
     private String age;
     private String place;
+    private String place_detail;
     private String color;
     private String feature;
     private String process;
@@ -110,6 +111,14 @@ public class BaseObj implements Serializable {
 
     public void setPlace(String place) {
         this.place = place;
+    }
+
+    public String getPlace_detail() {
+        return place_detail;
+    }
+
+    public void setPlace_detail(String place_detail) {
+        this.place_detail = place_detail;
     }
 
     public String getColor() {
